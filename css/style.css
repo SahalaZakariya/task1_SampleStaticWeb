@@ -1,0 +1,364 @@
+body{
+    color:#161515;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+header{
+    background-color:rgb(229, 26, 26);
+    
+
+}
+.site-nav ul{ 
+    background-color:BLACK;
+    height: 100px;
+    width:auto;
+    
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+.site-nav li{
+    background-color: white;
+    margin-right: 10px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px;
+  
+}
+    
+.site-nav li{
+    background-color: white;
+    transition: all 1s;
+    
+
+   
+} 
+.site-nav li:hover{
+    background-color:  hsl(0, 75%, 63%);;
+}
+
+.heading{
+    padding: 25px;
+    color:white;
+    font-size: large;
+    text-align: center;
+    font-weight:900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition:all 1s;
+    margin-bottom: 25px;
+}
+.heading:hover{
+    transform: rotate(360deg) scale(2);
+}
+.hero-content{
+    overflow: hidden;
+}
+.hero-content img{
+    /* background-position: center; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+.nav-bar{
+    background-color:rgb(229, 26, 26);
+   height: 50px;
+   margin-bottom: 100px;
+}
+.nav-bar-about{
+    background-color:rgb(229, 26, 26);
+   height: 50px;
+   margin-bottom: 0px;
+}
+.nav-bar-contact{
+    background-color:white;
+   height: 50px;
+   margin-bottom: 0px;
+}
+
+.nav-bar ul,.nav-bar-contact ul,.nav-bar-about ul{
+    list-style: none;
+    display: flex; 
+    gap: 30px;  
+   
+   
+}
+.nav-bar li,.nav-bar-contact li,.nav-bar-about li{
+    display:flex;
+    margin-top: 15px;
+    flex:1;
+    box-sizing: border-box;
+     
+}
+
+.nav-bar a,.nav-bar-about a{
+   
+    color:white;    
+}
+
+.nav-bar-contact a{
+    color:red;
+}
+.main_menu{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    margin:  0 auto;
+}
+.menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center; 
+}
+.menu-grid{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.item{
+    border: 2px solid beige;
+    background-color: #d1c6ba;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.1s ;
+}
+
+.item h3{
+    
+    font-size: 1.2rem;
+  color: #ff7043;
+  margin-bottom: 5px;
+}
+.item p{
+    width:80%;
+    text-align: center;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.6),rgba(0,0,0,.2));
+    
+}
+.item img{
+    transition-property: all 2s ;
+   
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.item img:hover{
+    transform: scale(1.5);
+   
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+.contact-container{
+    position: relative;
+}
+.contact-container img{
+    width:100%;
+    
+}
+.contact-container .caption{
+    position: absolute;
+    bottom:250px;
+    left:10px;
+    transition: all 2s;
+    color:red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.caption h3:hover{
+    transform: skew(25deg);
+}
+.caption p:hover{
+    transform: skew(25deg);
+}
+.section_contact{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 80% ;
+    box-sizing: border-box;
+    color: black;
+}
+.form-class {
+    color:red;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: flex-start;
+}
+textarea{
+    color: red;
+}
+.form-class input,
+.form-class textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-info {
+  background-color:  rgb(229, 26, 26);
+  color:white;
+  border-radius: 10px;
+  padding: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  
+  
+}
+.contact-info img{
+    width: 100%;
+    height: 50%;
+    
+}
+.contact-info h4{
+   font-size:small;
+   font-weight: bolder;
+   color:red;
+
+}
+
+.info-item{
+    text-align: center;
+    padding: auto;
+    color:white;
+    
+}
+.info-item h4{
+    color: white;
+}
+.about-team {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fffaf5; 
+  
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  box-sizing: border-box;
+  margin-top: 100px;
+  
+}
+.value {
+    border: 2px solid red;
+  background:white;
+  color: rgb(229, 26, 26);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(204, 22, 22, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.about-team {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fffaf5; /* soft beige tone */
+}
+
+.about-team h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+
+.team-grid {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.member {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.1s ;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+
+.member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+.member h3 {
+  font-size: 1.2rem;
+  color: #ff7043;
+  margin-bottom: 5px;
+}
+
+.member p {
+  font-size: 0.95rem;
+  color: #555;
+}
+.about-end{
+    background-color: rgb(229, 26, 26);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size:larger;
+    height: 50px;
+
+}
+.about-end p{
+    padding:10px;
+}
+.about-story{
+    margin-bottom: 10px;
+   
+    border-radius: 10px;
+    text-align: center;
+    color:black;
+    font-size:larger;
+    height: 50px;
+}
+.about-story p{
+    color:black;
+}
+@media screen and (max-width:800px){
+
+    .about-values{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .team-grid{
+         grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1000px){
+
+    .menu-grid{
+         grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
