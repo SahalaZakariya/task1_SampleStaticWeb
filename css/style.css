@@ -143,7 +143,7 @@ header{
     
 }
 .item img{
-    transition-property: all 2s ;
+    transition: all 2s ;
    
   object-fit: cover;
   border-radius: 10px;
